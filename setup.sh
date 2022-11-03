@@ -32,7 +32,7 @@ cd
 #install slhost
 wget https://raw.githubusercontent.com/lesta-2/ssh/main/slhost.sh && chmod +x slhost.sh && ./slhost.sh
 #install xray
-wget https://raw.githubusercontent.com/lesta-2/XRAY/main/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
+wget https://raw.githubusercontent.com/lesta-2/XRAY/main/add/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
 #install ssh ovpn
 wget https://raw.githubusercontent.com/lesta-2/ssh/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://raw.githubusercontent.com/lesta-2/ssh/main/sstp/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
