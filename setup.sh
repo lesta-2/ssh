@@ -21,7 +21,6 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 
-rm -f setup.sh
 clear
 if [ -f "/etc/xray/domain" ]; then
 echo "Script Already Installed"
@@ -29,6 +28,8 @@ exit 0
 fi
 mkdir /var/lib/crot;
 echo "IP=" >> /var/lib/crot/ipvps.conf
+cd
+#install slhost
 wget https://raw.githubusercontent.com/lesta-2/ssh/main/slhost.sh && chmod +x slhost.sh && ./slhost.sh
 #install xray
 wget https://raw.githubusercontent.com/lesta-2/XRAY/main/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
